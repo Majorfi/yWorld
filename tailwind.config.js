@@ -19,6 +19,16 @@ module.exports = {
 		extend: {
 			height: {
 				'inherit': 'inherit'
+			},
+			spacing: {
+				'50': '12.5rem',
+				'66': '16.5rem'
+			},
+			width: {
+				'5xl': '1120px'
+			},
+			maxWidth: {
+				'5xl': '1120px'
 			}
 		}
 	},

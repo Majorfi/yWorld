@@ -9,12 +9,8 @@ function	MyApp(props: AppProps): ReactElement {
 	return (
 		<WithYearn
 			options={{
-				web3: {
-					shouldUseWallets: true,
-					shouldUseStrictChainMode: false,
-					defaultChainID: 1,
-					supportedChainID: [1, 10, 250, 42161, 1337, 31337]
-				}
+				ui: {shouldUseThemes: false},
+				web3: {shouldUseWallets: false}
 			}}>
 			<AppWrapper {...props} />
 		</WithYearn>

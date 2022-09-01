@@ -15,7 +15,24 @@ module.exports = (phase) => withPWA({
 	images: {
 		domains: [
 			'rawcdn.githack.com',
-			'raw.githubusercontent.com'
+			'raw.githubusercontent.com',
+			'presskit.yearn.farm',
+			'yearn.finance',
+			'yearn.watch',
+			'next.yearn.watch',
+			'buyback.yearn.finance',
+			'ape.tax',
+			'brand.yearn.finance',
+			'vaults.yearn.finance',
+			'sync.yearn.farm',
+			'blog.yearn.finance',
+			'seafood.yearn.watch',
+			'yearn.farm',
+			'hack.yearn.farm',
+			'nft.ycorpo.com',
+			'nftreasury.click',
+			'macarena.finance',
+			'web.ycorpo.com'
 		]
 	},
 	env: {

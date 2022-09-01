@@ -1,11 +1,11 @@
 {
-	"name": "yWeb",
-	"short_name": "yWeb",
-	"description": "Template used for Yearn's projects",
+	"name": "yWorld",
+	"short_name": "yWorld",
+	"description": "A decentralized project registry for a decentralized brand.",
 	"iconPath": "./favicons/apple-icon.png",
 	"locale": "en-US",
-	"uri": "https://web.ycorpo.com/",
-	"og": "https://web.ycorpo.com/og.jpeg",
+	"uri": "https://yworld.vercel.app/",
+	"og": "https://yworld.vercel.app/og.png",
 	"twitter": "@iearnfinance",
 	"github": "https://github.com/yearn/web-template",
 	"icons": [

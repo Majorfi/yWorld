@@ -1,11 +1,9 @@
 import	React, {ReactElement}				from	'react';
 import	{AppProps}							from	'next/app';
-import	{KBarProvider}						from	'kbar';
+import	Link								from	'next/link';
 import	{AnimatePresence, motion}			from	'framer-motion';
-import	Header								from	'components/common/StandardHeader';
-import	Footer								from	'components/common/StandardFooter';
 import	Meta								from	'components/common/Meta';
-import	KBar								from	'components/common/Kbar';
+import	Header								from	'components/Header';
 
 const transition = {duration: 0.3, ease: [0.17, 0.67, 0.83, 0.67]};
 const thumbnailVariants = {
@@ -17,13 +15,34 @@ const thumbnailVariants = {
 function	WithLayout(props: AppProps): ReactElement {
 	const	{Component, pageProps, router} = props;
 
+	const		navbarMenuOptions = [
+		{
+			route: '/',
+			values: ['/'],
+			label: 'Built on Yearn'
+		},
+		{
+			route: '/social',
+			values: ['/social'],
+			label: 'Social Media'
+		}
+	];
+
+	function handleExitComplete(): void {
+		if (typeof window !== 'undefined') {
+			document.getElementById('app')?.scrollIntoView({behavior: 'smooth'});
+		}
+	}
+
+
 	return (
 		<React.Fragment>
 			<Header
-				shouldUseNetworks={true}
-				shouldUseWallets={true} />
-			<div id={'app'} className={'mx-auto mb-0 flex w-full max-w-6xl flex-col pt-6 md:pt-0'}>
-				<AnimatePresence mode={'wait'}>
+				selected={router.pathname}
+				options={navbarMenuOptions}
+				wrapper={<Link passHref href={''} scroll={false} />} />
+			<div id={'app'} className={'mx-auto mb-0 mt-14 flex w-full max-w-6xl flex-col pt-6 md:pt-0'}>
+				<AnimatePresence mode={'wait'} onExitComplete={handleExitComplete}>
 					<motion.div
 						key={router.asPath}
 						initial={'initial'}
@@ -37,38 +56,15 @@ function	WithLayout(props: AppProps): ReactElement {
 					</motion.div>
 				</AnimatePresence>
 			</div>
-			<Footer />
 		</React.Fragment>
 	);
 }
 
 function	AppWrapper(props: AppProps): ReactElement {
-	const	{router} = props;
-	const	initialActions = [{
-		id: 'homeAction',
-		name: 'Home',
-		shortcut: ['h'],
-		keywords: 'home',
-		section: 'Navigation',
-		perform: async (): Promise<boolean> => router.push('/')
-	}, {
-		id: 'settingsActions',
-		name: 'Settings',
-		shortcut: ['s'],
-		keywords: 'settings configuration config',
-		section: 'Navigation',
-		perform: async (): Promise<boolean> => router.push('/settings')
-	}];
-
 	return (
 		<>
 			<Meta />
-			<KBarProvider actions={initialActions}>
-				<div className={'z-[9999]'}>
-					<KBar />
-				</div>
-				<WithLayout {...props} />
-			</KBarProvider>
+			<WithLayout {...props} />
 		</>
 	);
 }
