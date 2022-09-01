@@ -22,10 +22,10 @@ const variants = {
 const networks = [
 	['https://twitter.com/iearnfinance', '@iearnfinance', '/social-twitter.svg', '#1DA1F2', '#FFFFFF'],
 	['https://github.com/yearn', 'yearn', '/social-github.png?1', '#000000', '#FFFFFF'],
-	['https://www.lensfrens.xyz/yearn.lens', '@yearn.lens', '/social-lens.svg', '#ABFE2C', '#00501E'],
+	['https://medium.com/iearn', 'iearn', '/social-medium.png?1', '#F3F3F3', '#000000', 200],
 	['https://gov.yearn.finance/', 'Governance', '/social-yearn.svg', '#FA3AA7', '#FFFFFF'],
 	['https://discord.yearn.finance/', 'discord.yearn.finance', '/social-discord.svg', '#5865F2', '#FFFFFF'],
-	['https://medium.com/iearn', 'iearn', '/social-medium.png?1', '#F3F3F3', '#000000', 200]
+	['https://www.lensfrens.xyz/yearn.lens', '@yearn.lens', '/social-lens.svg', '#ABFE2C', '#00501E']
 ];
 
 
@@ -39,19 +39,6 @@ function	Index(): ReactElement {
 							{'Social media'}
 						</h2>
 					</div>
-					<motion.div
-						initial={'initial'}
-						whileInView={'enter'}
-						custom={0}
-						className={'mb-12 w-full'}
-						variants={variants as Variants}>
-						<Image
-							src={'/nofees.jpeg'}
-							width={4096}
-							height={2304}
-							quality={80}
-							loading={'eager'} />
-					</motion.div>
 					<div className={'grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'}>
 						{networks?.map((project, i: number): ReactElement => (
 							<motion.div
