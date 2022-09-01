@@ -4,10 +4,10 @@
 	"description": "A decentralized project registry for a decentralized brand.",
 	"iconPath": "./favicons/apple-icon.png",
 	"locale": "en-US",
-	"uri": "https://yworld.vercel.app/",
-	"og": "https://yworld.vercel.app/og.png",
+	"uri": "https://world.yearn.finance/",
+	"og": "https://world.yearn.finance/og.png",
 	"twitter": "@iearnfinance",
-	"github": "https://github.com/yearn/web-template",
+	"github": "https://github.com/yearn/yWorld",
 	"icons": [
 		{
 			"src": "./favicons/android-icon-192x192.png",
