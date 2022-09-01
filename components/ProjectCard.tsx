@@ -54,8 +54,8 @@ function	ProjectCard({
 					</p>
 					<p className={'pb-2 font-mono text-xs text-neutral-500'}>
 						{'git: '}&nbsp;
-						<a target={'_blank'} href={metadata?.['git-url']} className={'cursor-pointer font-mono text-xs text-yearn-blue'} rel={'noreferrer'}>
-							{(metadata?.['git-url'] || '-').replaceAll('https://', '').replace(/\/+$/, '')}
+						<a target={'_blank'} href={overwrite?.['git-url'] ? overwrite?.['git-url'] : metadata?.['git-url']} className={'cursor-pointer font-mono text-xs text-yearn-blue'} rel={'noreferrer'}>
+							{(overwrite?.['git-url'] ? overwrite['git-url'] : (metadata?.['git-url'] || '-')).replaceAll('https://', '').replace(/\/+$/, '')}
 						</a>
 					</p>
 					<p className={'break-all font-mono text-xs text-neutral-500 '}>

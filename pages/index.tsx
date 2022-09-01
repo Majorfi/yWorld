@@ -35,7 +35,7 @@ const projectList = [
 	['https://bowswap.finance/', ['Yield Farming']],
 	['https://docs.yearn.finance/', ['Other'], {title: 'Yearn.finance Docs'}],
 	['https://yearn.love', ['Communication']],
-	['https://yearn.vision', ['Data analytics'], {title: 'Yearn Vision'}]
+	['https://yearn.vision', ['Data analytics'], {title: 'Yearn Vision', 'git-url': 'https://github.com/yearn/yearn-exporter'}]
 ];
 
 function	Index(): ReactElement {
