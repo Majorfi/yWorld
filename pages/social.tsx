@@ -36,7 +36,7 @@ function	Index(): ReactElement {
 				<div className={'w-full'}>
 					<div>
 						<h2 className={'mb-10 text-3xl font-bold text-neutral-900'}>
-							{'Social medias'}
+							{'Social media'}
 						</h2>
 					</div>
 					<motion.div
