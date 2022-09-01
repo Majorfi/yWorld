@@ -22,7 +22,7 @@ const variants = {
 const networks = [
 	['https://twitter.com/iearnfinance', '@iearnfinance', '/social-twitter.svg', '#1DA1F2', '#FFFFFF'],
 	['https://github.com/yearn', 'yearn', '/social-github.png?1', '#000000', '#FFFFFF'],
-	['https://www.lensfrens.xyz/yearn_finance.lens', '@yearn_finance.lens', '/social-lens.svg', '#ABFE2C', '#00501E'],
+	['https://www.lensfrens.xyz/yearn.lens', '@yearn.lens', '/social-lens.svg', '#ABFE2C', '#00501E'],
 	['https://gov.yearn.finance/', 'Governance', '/social-yearn.svg', '#FA3AA7', '#FFFFFF'],
 	['https://discord.yearn.finance/', 'discord.yearn.finance', '/social-discord.svg', '#5865F2', '#FFFFFF'],
 	['https://medium.com/iearn', 'iearn', '/social-medium.png?1', '#F3F3F3', '#000000', 200]
