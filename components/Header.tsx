@@ -107,6 +107,7 @@ function	Header({
 							);
 						})}
 					</div>
+					<div style={{minWidth: 40}} />
 				</nav>
 				{children}
 			</div>
