@@ -1,5 +1,4 @@
 import	React, {ReactElement}				from	'react';
-import	Image								from	'next/image';
 import	{motion, Variants}					from	'framer-motion';
 import	SocialCard							from	'components/SocialCard';
 
