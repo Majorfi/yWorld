@@ -64,7 +64,6 @@ function	Header({
 						</h1>
 						<div className={'text-center text-lg text-neutral-500'}>
 							<p>{'The expansive world of Yearn, neatly wrangled in one place.'}</p>
-							<p>{'Take the blue pill and enter the world of yearn.'}</p>
 						</div>
 					</div>
 					<div className={'flex w-full items-center justify-center'}>
