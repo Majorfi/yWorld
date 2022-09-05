@@ -1,7 +1,7 @@
 {
 	"name": "yWorld",
 	"short_name": "yWorld",
-	"description": "A decentralized project registry for a decentralized brand.",
+	"description": "The expansive world of Yearn, neatly wrangled in one place.",
 	"iconPath": "./favicons/apple-icon.png",
 	"locale": "en-US",
 	"uri": "https://world.yearn.finance/",
