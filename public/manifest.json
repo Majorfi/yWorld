@@ -2,7 +2,7 @@
 	"name": "yWorld",
 	"short_name": "yWorld",
 	"description": "The expansive world of Yearn, neatly wrangled in one place.",
-	"iconPath": "./favicons/apple-icon.png",
+	"iconPath": "./favicons/favicon.svg",
 	"locale": "en-US",
 	"uri": "https://world.yearn.finance/",
 	"og": "https://world.yearn.finance/og.png",

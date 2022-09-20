@@ -30,7 +30,7 @@ function	ProjectCard({
 	return (
 		<div className={'w-full'}>
 			<a target={'_blank'} href={metadata?.url} className={'cursor-pointer'} rel={'noreferrer'}>
-				<div className={'flex aspect-video w-full items-center justify-center bg-yearn-blue px-4'}>
+				<div className={`bg-yearn-bluee flex aspect-video w-full items-center justify-center px-4 ${tagClassNames[tags[0]]}`}>
 					<h3 className={'text-center text-3xl font-bold text-neutral-0'}>
 						{overwrite?.title ? overwrite?.title : metadata?.title || ''}
 					</h3>
