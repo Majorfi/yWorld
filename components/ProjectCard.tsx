@@ -7,13 +7,14 @@ const fetcher = async (path: string, url: string): Promise<TMetadata> => axios.g
 const fetcherSimple = async (url: string): Promise<TGithubReleases[]> => axios.get(url).then((res): any => res.data).catch((e): void => console.log(e));
 
 const	tagClassNames: any = {
-	'Yield Farming': 'bg-up-only-green-600 text-white',
-	'Data analytics': 'bg-metaverse-sunset-600 text-white',
+	'Yield Farming': 'bg-yearn-blue text-white',
+	'Data analytics': 'bg-red text-white',
 	'Experimental Defi': 'bg-up-only-green-600 text-white',
 	'Design': 'bg-tokyo-party-400 text-white',
-	'Communication': 'bg-disco-salmon-600 text-white',
+	'Communication': 'bg-metaverse-sunset-600 text-white',
 	'NFT': 'bg-tokyo-party-400 text-white',
-	'Other': 'bg-neutral-400 text-white'
+	'Other': 'bg-neutral-400 text-white',
+	'New': 'bg-up-only-green-400 text-white'
 };
 
 function	ProjectCard({
@@ -30,7 +31,7 @@ function	ProjectCard({
 	return (
 		<div className={'w-full'}>
 			<a target={'_blank'} href={metadata?.url} className={'cursor-pointer'} rel={'noreferrer'}>
-				<div className={`bg-yearn-bluee flex aspect-video w-full items-center justify-center px-4 ${tagClassNames[tags[0]]}`}>
+				<div className={`flex aspect-video w-full items-center justify-center px-4 ${tagClassNames[tags[0]]}`}>
 					<h3 className={'text-center text-3xl font-bold text-neutral-0'}>
 						{overwrite?.title ? overwrite?.title : metadata?.title || ''}
 					</h3>

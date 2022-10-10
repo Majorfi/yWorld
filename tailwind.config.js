@@ -17,6 +17,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				red: '#D02A20'
+			},
 			height: {
 				'inherit': 'inherit'
 			},

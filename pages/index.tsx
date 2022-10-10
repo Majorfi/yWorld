@@ -19,23 +19,28 @@ const variants = {
 	}
 };
 
+
 const projectList = [
-	['https://yearn.finance', ['Yield Farming']],
-	['https://next.yearn.watch', ['Data analytics']],
-	['https://buyback.yearn.finance', ['Yield Farming']],
-	['https://ape.tax', ['Experimental Defi']],
-	['https://brand.yearn.finance', ['Design', 'Communication']],
+	['https://yearn.finance', ['Yield Farming'], {title: 'Yearn Finance', 'git-url': 'https://github.com/yearn/yearn-exporter'}],
+	['https://y.finance', ['Yield Farming', 'New'], {title: 'yCRV', 'git-url': 'https://github.com/yearn/yCRV'}],
+	['https://buyback.yearn.finance', ['Yield Farming'], {title: 'YFI Buyback', 'git-url': 'https://github.com/yearn/yBuyback'}],
+
+	['https://nftreasury.click', ['Yield Farming', 'NFT'], {title: 'NFTreasury', 'git-url': 'https://github.com/yearn/NFTreasury'}],
+	['https://macarena.finance', ['Yield Farming'], {title: 'Macarena Finance', 'git-url': 'https://github.com/yearn/macarena-finance'}],
+	['https://bowswap.finance/', ['Yield Farming'], {title: 'Bowswap', 'git-url': 'https://github.com/Majorfi/bowswap_ui'}],
+
+	['https://sync.yearn.farm', ['Data analytics'], {title: 'Yearn Sync', 'git-url': 'https://github.com/yearn/ySync'}],
+	['https://yearn.watch', ['Data analytics'], {title: 'Yearn Watch', 'git-url': 'https://github.com/yearn/yearn-watch'}],
+	['https://yearn.vision', ['Data analytics'], {title: 'Yearn Vision', 'git-url': 'https://github.com/yearn/yearn-exporter'}],
+
+	['https://brand.yearn.finance', ['Communication', 'Design'], {title: 'Yearn Brand', 'git-url': 'https://github.com/yearn/yearn-press-kit'}],
 	['https://vaults.yearn.finance', ['Communication']],
-	['https://sync.yearn.farm', ['Data analytics']],
 	['https://blog.yearn.finance', ['Communication']],
-	['https://hack.yearn.farm', ['Other']],
-	['https://nftreasury.click', ['NFT', 'Yield Farming']],
-	['https://macarena.finance', ['Yield Farming']],
-	['https://web.ycorpo.com', ['Other']],
-	['https://bowswap.finance/', ['Yield Farming']],
-	['https://docs.yearn.finance/', ['Other'], {title: 'Yearn.finance Docs'}],
+	['https://docs.yearn.finance/', ['Communication'], {title: 'Yearn.finance Docs'}],
 	['https://yearn.love', ['Communication']],
-	['https://yearn.vision', ['Data analytics'], {title: 'Yearn Vision', 'git-url': 'https://github.com/yearn/yearn-exporter'}]
+	['https://ape.tax', ['Experimental Defi'], {title: 'ape.tax', 'git-url': 'github.com/saltyfacu/ape-tax'}],
+	['https://hack.yearn.farm', ['Other']],
+	['https://web.ycorpo.com', ['Other']]
 ];
 
 function	Index(): ReactElement {
