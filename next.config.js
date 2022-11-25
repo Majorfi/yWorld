@@ -32,7 +32,9 @@ module.exports = (phase) => withPWA({
 			'nft.ycorpo.com',
 			'nftreasury.click',
 			'macarena.finance',
-			'web.ycorpo.com'
+			'web.ycorpo.com',
+			'ybribe.com',
+			'y.finance'
 		]
 	},
 	env: {
