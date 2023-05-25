@@ -19,7 +19,7 @@ const variants = {
 };
 
 const networks = [
-	['https://twitter.com/iearnfinance', '@iearnfinance', '/social-twitter.svg', '#1DA1F2', '#FFFFFF'],
+	['https://twitter.com/yearnfi', '@yearnfi', '/social-twitter.svg', '#1DA1F2', '#FFFFFF'],
 	['https://github.com/yearn', 'yearn', '/social-github.png?1', '#000000', '#FFFFFF'],
 	['https://medium.com/iearn', 'iearn', '/social-medium.png?1', '#F3F3F3', '#000000', 200],
 	['https://gov.yearn.finance/', 'Governance', '/social-yearn.svg', '#FA3AA7', '#FFFFFF'],
