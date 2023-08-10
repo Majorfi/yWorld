@@ -21,7 +21,7 @@ const variants = {
 
 
 const projectList = [
-	['https://yearn.finance', ['Yield Farming'], {title: 'Yearn Finance', 'git-url': 'https://github.com/yearn/yearn-exporter'}],
+	['https://yearn.finance', ['Yield Farming'], {title: 'Yearn Finance', 'git-url': 'https://github.com/yearn/yearn.fi'}],
 	['https://y.finance', ['Yield Farming', 'New'], {title: 'yCRV', 'git-url': 'https://github.com/yearn/yCRV'}],
 	['https://buyback.yearn.finance', ['Yield Farming'], {title: 'YFI Buyback', 'git-url': 'https://github.com/yearn/yBuyback'}],
 	['https://yBribe.com', ['Yield Farming', 'Other'], {title: 'yBribe', 'git-url': 'https://github.com/yearn/yBribe'}],
